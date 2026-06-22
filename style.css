@@ -186,6 +186,7 @@ body.light-theme .page-header {
 
 
 /*СТОРІНКА ГЛОСАРІЯ*/
+
 /* Вступний текст */
 .intro {
     text-align: center;
@@ -475,4 +476,13 @@ a:visited {
     width: 100%;
     height: auto;
   }
+}
+
+.text-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 12px;
 }
