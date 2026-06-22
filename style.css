@@ -327,35 +327,6 @@ body.light-theme .page-header {
     line-height: 1.6;
 }
 
-
-/*АДАПТИВНІСТЬ*/
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-}
-@media (max-width: 600px) {
-    .page-wrapper {
-        margin: 20px;
-        padding: 20px;
-    }
-    .hero {
-        padding: 80px 20px;
-    }
-    .search-box input {
-        width: 100%;
-        max-width: 300px;
-    }
-    .side-nav {
-        display: none;
-    }
-    .gallery img {
-        width: 250px;
-        height: 170px;
-    }
-}
-
-
 /*БАНЕР*/
 .banner{
   margin: 30px auto;
@@ -413,17 +384,7 @@ body.light-theme .page-header {
   margin: 5px 0 0;
   line-height: 1.5;
 }
-/* адаптивність*/
-@media (max-width: 600px){
-  .inventor-row{
-    flex-direction: column;
-    text-align: center;
-  }
-  .inventor-row img{
-    width: 100%;
-    height: auto;
-  }
-}
+
 
 /*КОЛІР ПОСИЛАНЬ*/
 a {
@@ -431,4 +392,87 @@ a {
 }
 a:visited {
   color: white;
+}
+
+
+/*АДАПТИВНІСТЬ*/
+
+@media (max-width: 768px) {
+
+  .page-header {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .nav-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .hero {
+    padding: 70px 15px;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .gallery {
+    padding: 20px;
+  }
+
+  .gallery img {
+    width: 220px;
+    height: 150px;
+  }
+
+  .page-wrapper {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .side-nav {
+    display: none;
+  }
+}
+
+
+/* телефони */
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 60px 10px;
+  }
+
+  .gallery img {
+    width: 180px;
+    height: 130px;
+  }
+
+  .search-box input {
+    max-width: 100%;
+  }
+}
+
+
+/* винахідники */
+@media (max-width: 600px) {
+  .inventor-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .inventor-row img {
+    width: 100%;
+    height: auto;
+  }
 }
